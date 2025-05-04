@@ -223,7 +223,7 @@ function main(){
 								  badcase.play();
 								} else {
 								  goodcase.play();
-								}  }, 500);					
+								}  }, 5000);					
 							shuffledValues.splice(i, 1);
 							nos.splice(i, 1);				
 						}
