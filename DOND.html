@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Welcome to Deal or No Deal!</title>
+    <link rel="stylesheet" type="text/css" href="DOND.css">
+	<link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
+</head>
+    <style>
+     body {
+            font-family: Arial, Verdana, sans-serif;
+            font-size: 1.5em;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="home">
+        <button id="original">Original: MILLION Deal</button><button id="tourn">Tournament: MULTI-MILLION Deal</button>  
+        <div id="intro">
+            One of the most popular TV game shows where you try to find $1,000,000 among 26 cases! 
+            No particular aptitude, lateral thinking or stunts involved - just an element of luck, nerves of steel and a sense of timing as you battle against the odds and the banker who is, as always, up to his devious tricks! 
+            Will you be able to win a fortune or at least make a good deal? Or will you yield to the banker’s manipulative ways? 
+            Or will you end up with almost nothing?
+        </div>
+        <div>
+            <button id="seeExplainButton">More information</button>
+        </div>
+        <div id="explain">
+            <div id="explainContainer">
+                <img class="logoImg" src="dealLogo.png">
+                <div class="text">
+                    <ol>
+                        <li>To begin, you choose a case for yourself. To determine what amount is inside your chosen case, you pick cases from the remaining pool of 25 to be opened. The amounts in these cases are then revealed and removed from the board, indicating that they cannot be in your case by elimination.
+                        </li>
+                        <li>Each time the banker calls, you have 15 seconds to decide between Deal and No Deal:
+                            <ul>
+                                <li>Deal to accept his offer in exchange for your case without knowing what's inside;</li>
+                                <li>No Deal to decline his offer and continue picking cases to be opened. </li>
+                            </ul>
+                        </li>
+                        <li>The banker calls in for the last time when there are two cases left - namely your case and the only unopened case standing. If you choose No Deal, you will have to decide between keeping your original case and swapping with the other! Your winnings will be the amount in the case eventually taken!  
+                        </li>
+                    </ol>
+                    <p>Disclaimer: None of it is real money!</p>
+                    <button id="explainButton" class="buttons">OK, I understand.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="caseContainer">
+    <div id="lefttoRemove"></div>    
+    <script>
+        for(i=1;i<=26;i++){
+            caseContainer.innerHTML += '<div class="cases">' + '<span class="caseNo">' + i +'</span>' + '<span class="caseValue">' + '</span>' + '</div>' 
+        } 
+    </script>
+    </div>   
+    <div id="leftMoneys" class="moneys">
+    <script>
+		for(i=0;i<13;i++){
+            leftMoneys.innerHTML += '<div class="moneyShow">' + '</div>'
+        }
+	</script>
+    </div>      
+    <div id="rightMoneys" class="moneys">
+    <script>
+        for(i=0;i<13;i++){
+            rightMoneys.innerHTML += '<div class="moneyShow">' + '</div>'
+        }
+    </script>   
+	</div>
+    <div id="bank">
+        <div id="bankContent">
+            <div id="countdown"></div>
+    <div class="bankTitle">BANK OFFER</div>
+			<div class="bankOffer"></div>
+			<button id="Deal" class="buttons">Deal?</button>
+			<button id="noDeal" class="buttons">No Deal?</button>
+			<div id="nextRound">Number of cases to open next round:</div>
+            <div id="prevOffers">Previous Offers: none</div>
+		</div>
+	</div>
+	<div id="finished">
+		<div id="finishedContent">
+			<div class="modalText">Game summary</div>
+			<div id="winnings"></div>
+		</div>
+	</div>
+	<div id="lastDeal">
+		<div id="lastDealContent">
+			<div class="modalText">Final two cases - keeping your case? Or thinking the grass might be greener in the other case?</div>
+                <button id="yourCase"><div id="yourNo"><div id="yourValue"></div></div></button>
+                <button id="otherCase"><div id="otherNo"><div id="otherValue"></div></div></button>       
+		</div>
+	</div>
+	<div id="chooseCase">
+		<div id="chooseCaseContent">
+			<div class="chooseCaseText">Where do you think the top prize is hidden?</div>
+            <script>
+            for(i=1; i<=26; i++){
+                chooseCaseContent.innerHTML += '<button class="chooseCaseButton">' + i + '</button>'
+                }
+            </script>
+    </div>
+    </div>
+    <div id="luckyCase">
+        <script>
+            for(i=1;i<=26;i++){
+                luckyCase.innerHTML += '<div class="cases">'  + '<span class="caseValue">' + '</span>' + '</div>' 
+            } 
+        </script>
+    </div>
+</body>
+<script type="text/javascript" src="DOND.js"></script>
+</html>

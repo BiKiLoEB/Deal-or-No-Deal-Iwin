@@ -1,0 +1,400 @@
+html {
+    height: 100%;
+}
+body {
+	margin: 0 auto;
+	background: #2B1F48;
+	background-image: url(https://pbs.twimg.com/ext_tw_video_thumb/1497047955940990977/pu/img/849qEvMUs3SiysAv.jpg:large);
+	background-size: 100% 120%;
+    font-family: 'Verdana', 'Arial';
+	height: 100%;
+	width: 100%;
+}
+button {
+	font-family: 'Arial', 'Verdana';
+}
+
+.logoImg {
+	width: 400px;
+	padding: 30px 0px;
+}
+#home {
+	width: 54vw;
+	height: 100vh;
+	margin: 0 auto;
+	align-content: center;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#original, #tourn {
+	background: goldenrod;
+	width: 25vw;
+	height: 25vh;
+	color: red;
+}
+#original{
+	background-image: url(https://st2.depositphotos.com/4601361/43865/i/450/depositphotos_438656280-stock-photo-cash-money-large-pile-finance.jpg);
+}
+#tourn {
+	background-image: url(https://media.istockphoto.com/id/492595743/photo/money-pile-bundles-of-100-usd-notes.jpg?s=1024x1024&w=is&k=20&c=ZtGWL6nimJykLvTRDe6ZsdF4E1ffnxKG7o5BVUo4qek=);
+}
+#intro{
+	background: #2B1F48;
+	width: 50vw;
+	color: white; 
+	font-size: 20px;
+	padding: 5vh;
+}
+
+#worldwide {
+	width: 54vw;
+	height: 100vh;
+	margin: 0 auto;
+	align-content: center;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#location{
+	font-size: 30px;
+}
+#jackpot{
+	font-size: 20px;
+}
+#fee{
+	font-size: 20px;
+}
+#reserve{
+	font-size: 20px;
+}
+#caseContainer {
+	width: 54vw;
+	height: 100vh;
+	margin: 0 auto;
+	align-content: center;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.cases.open{
+	width: 200 px;
+	height: 150 px;
+}
+.cases {
+	background: silver; 
+	border: 4px solid black;
+	color: black;
+	background-position: center;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 110px;
+	transition: all 0.5s ease-in-out;
+	font-weight: 800;
+	font-size: 25px;
+}
+.cases:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.6);
+	border: 3px solid gold;
+	cursor: pointer;
+}
+.animateCase{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background: silver;
+}
+.openedCase {
+	color: white;
+	background: #2B1F48;
+	width: 150px;
+	font-weight: 300;
+	font-size: 15px;
+}
+.chosenNo {
+	color: black;
+	font-size: 15px;
+}
+#rightMoneys {
+	right: 0;
+}
+#leftMoneys {
+	left: 0;
+}
+.moneys {
+	display: inline-block;
+	position: fixed;
+  	width: 20vw;
+  	top: 2vh;	
+}
+.moneyShow {
+	width: 90%;
+	height: 6vh;
+	line-height: 6vh;
+	margin-bottom: 0vh;
+	background: repeating-linear-gradient(45deg, gold,palegoldenrod,gold 100%);
+	position: relative;
+	text-align: right;
+	color: black;
+	font-size: 20px;
+	transition: all 1s;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hideValue {
+	text-indent: 100%;
+	overflow: hidden;
+	width: 0px !important;
+	display: inline-flex;
+}
+.DisplayValue {
+	text-indent: 0;
+	overflow: auto;
+}
+.gaps {
+	margin: 5px;
+}
+.removeValue {
+	background: saddlebrown;
+}
+#bank, #finished, #lastDeal, #chooseCase {
+	display: none;
+	position: absolute;
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.4);
+	transition: all 0.5s;
+	font-family: 'Eurostile';
+}
+.chooseCaseButton {
+	background: silver;
+	border: 4px solid black;
+	color: black;
+	width: 90px;
+	transition: all 0.5s;
+	font-size: 35px;
+}
+.chooseCaseButton:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.6);
+	border: 3px solid gold;
+	cursor: pointer;
+}
+#yourCase {
+	background-image: url(https://i.ibb.co/Hrb4fzt/gold.jpg);
+	border: 4px solid black;
+	color: black;
+	width: 150px;
+	height: 100px;
+	transition: all 0.5s;
+	font-size: 35px;
+	text-align: center;
+}
+
+#otherCase {
+	background: silver;
+	border: 4px solid black;
+	color: black;
+	width: 150px;
+	height: 100px;
+	transition: all 0.5s;
+	font-size: 35px;
+	text-align: center;
+}
+#yourValue, #otherValue {
+	color: white;
+	background: #2B1F48;
+	font-weight: 300;
+	font-size: 15px;
+}
+#bankContent, #finishedContent, #lastDealContent, #chooseCaseContent {
+	background: gold;
+	padding: 20px;
+	border: 4px solid goldenrod;
+	width: 45%;
+	margin: 0 auto;
+	text-align: center;
+	transition: all 0.5s;
+	margin-top: 5vh;
+}
+
+#lastDealContent {
+	background: url(https://i.ibb.co/s6NRwBF/deal-Or-No-Deal-Background.jpg);
+	padding: 20px;
+	border: 4px solid goldenrod;
+	height: 40%;
+	margin: 0 auto;
+	text-align: center;
+	transition: all 0.5s;
+	margin-top: 15vh;
+}
+#finishedContent {
+	background-image: url(https://i.ibb.co/nkpB2x2/winBg.jpg);
+	background-position: center;
+	min-height: 40vh;
+	padding-top: 25vh;
+	text-shadow: 1px 1px 30px goldenrod, 1px 1px 30px goldenrod;
+}
+#bankContent {
+    background: black;
+	background-position: center;
+	background-size: 650px;
+	border: 4px solid goldenrod;
+}
+#chooseCaseContent {
+	background: #2B1F48;
+	background-image: url(https://i.ibb.co/nC2NK9F/choose-cases-Bg.jpg);
+	background-position: center;
+	background-size: 400px;
+	width: 500px;
+	color: white;
+}
+.chooseCaseText {
+	font-weight: 900;
+	font-size: 20px;
+	color: goldenrod;
+	text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+.bankLogo {
+	height: 100px;
+	width: auto;
+}
+button {
+	height: 60px;
+	line-height: 20px;
+	font-size: 20px;
+	color: white;
+	width: 200px;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin: 10px;
+	transition: all 0.5s;
+}
+button:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.45);
+}
+.bankTitle {
+	font-size: 20px;
+	font-weight: 700;
+	padding-top: 20px;
+	color: gold;
+}
+.bankOffer {
+	font-size: 40px;
+	font-weight: 900;
+	padding: 30px;
+	color: gold;
+}
+#Deal{
+	background: green;
+	border: 4px solid black;
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 35px;
+}
+#noDeal{
+	background: red;
+	border: 4px solid black;
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 35px;
+}
+
+#changeCase, #keepCase{
+	font-size: 20px;
+}
+#countdown, #lefttoRemove {
+	font-weight: 700;
+	font-family: 'Eurostile';
+	padding: 20px;
+	font-size: 30px;
+	color: gold
+}
+#prevOffers, #nextRound {
+	font-weight: 700;
+	padding: 20px;
+	font-size: 20px;
+	color: gold;
+}
+
+.chosenCase {
+	background-image: url(https://i.ibb.co/Hrb4fzt/gold.jpg);
+	border: 4px solid black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: black;
+	width: 110px;
+	transition: all 0.5s;
+	font-weight: 800;
+	font-size: 25px;
+}
+
+.modalText {
+	font-weight: 700;
+	font-size: 20px;
+	color: gold;
+	padding: 10px;
+}
+.text {
+	font-size: 15px;
+}
+#winnings {
+	padding: 20px;
+	font-weight: 900;
+	font-size: 60px;
+}
+
+#seeExplainButton {
+	background: goldenrod;
+	background-image: url(https://i.ibb.co/Hrb4fzt/gold.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 4px solid black;
+	color: black;
+	font-size: 20px;
+	width: 300px;
+	transition: all 0.5s;
+}
+#explain {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(255,255,255,0.85);
+	z-index: 1;
+	padding-top: 100px;
+}
+#explainButton {
+	background: goldenrod;
+	background-image: url(https://i.ibb.co/Hrb4fzt/gold.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 4px solid black;
+	color: black;
+	font-size: 20px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #2B1F48;
+    color: #DDD;
+    text-align: center;
+    font-size: 15px;
+}
+footer p {
+    margin: 0px;
+    padding: 5px;
+}
+.rotatePhoneImg {
+	width: 150px;
+}
+.rotatePhoneText {
+	color: white;
+	font-size: 20px;
+	padding-top: 20px;
+}
