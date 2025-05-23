@@ -136,7 +136,7 @@ button {
 	color: black;
 	font-size: 20px;
 	transition: all 1s;
-	font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+	font-family: 'Verdana';
 }
 .hideValue {
 	text-indent: 100%;
