@@ -136,7 +136,8 @@ button {
 	color: black;
 	font-size: 20px;
 	transition: all 1s;
-	font-family: 'Verdana';
+	font-weight: 500;
+	font-family: 'Eurostile';
 }
 .hideValue {
 	text-indent: 100%;
@@ -165,7 +166,7 @@ button {
 	background: rgb(0,0,0);
 	background: rgba(0,0,0,0.4);
 	transition: all 0.5s;
-	font-family: 'Verdana';
+	font-family: 'Eurostile';
 }
 .chooseCaseButton {
 	background: silver;
