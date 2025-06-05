@@ -165,7 +165,7 @@ button {
 	background: rgb(0,0,0);
 	background: rgba(0,0,0,0.4);
 	transition: all 0.5s;
-	font-family: 'Eurostile';
+	font-family: 'Verdana';
 }
 .chooseCaseButton {
 	background: silver;
