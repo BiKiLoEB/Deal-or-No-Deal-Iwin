@@ -103,8 +103,8 @@ var prevOffers = document.getElementById("prevOffers");
 var finished = document.getElementById("finished");
 var chosenCase = 0;
 var previousOffers = [];
-var toRemove = [7,5,4,3,2,1,1,1];
-var removed = [7]
+var toRemove = [6,5,5,3,2,1,1,1];
+var removed = [6]
 removed.length = 8
 for(i=1; i<removed.length; i++){
 	removed[i] = removed[i-1] + toRemove[i];
@@ -199,7 +199,7 @@ function average(array){
 function main(){
 	for(var i = 0; i < cases.length; i++){
 		//assign values to cases and hide them
-		lefttoRemove.innerHTML = "CHOOSE 7 TO OPEN"; 
+		lefttoRemove.innerHTML = "CHOOSE 6 TO OPEN"; 
 		caseValue[i].textContent = "$" + shuffledValues[i].toLocaleString('en-US');
 		caseValue[i].classList.add("hideValue");
 		yourValue.textContent = "$" + shuffledValues[chosenCase-1].toLocaleString('en-Us');											
