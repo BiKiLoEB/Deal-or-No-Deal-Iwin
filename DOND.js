@@ -43,7 +43,7 @@ for (i=1;i<13;i++){
     }                   
 }  
 // Reserves and admission fees for different levels
-reserve = [1e+05, 5e+05, 2e+06, 5e+06, 1.5e+07, 3e+07, 7.5e+07, 1.75e+08, 3e+08, 5.5e+08, 1e+09, 1.75e+09, 2.75e+09, 5e+09]
+reserve = [1e+05, 5e+05, 2e+06, 5e+06, 1.5e+07, 3e+07, 7.5e+07, 1.75e+08, 3.5e+08, 6e+08, 1e+09, 1.75e+09, 2.75e+09, 5.5e+09]
 
 percent = [0]
 increment = [0.005]
